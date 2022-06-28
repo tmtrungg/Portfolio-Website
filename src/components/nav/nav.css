@@ -1,0 +1,97 @@
+.nava {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0.5rem;
+    top: 0rem;
+    z-index: 2;
+}
+
+.nav {
+    border: 1px solid var(--color-primary);
+    padding: 0.4rem;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    position: block;
+    transform: translateX(-50%);
+    gap: 0.1rem;
+}
+
+.nav a {
+    background: transparent;
+    padding: 0.5rem;
+    border-radius: 20%;
+    display: flex;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+}
+
+.nav a:hover {
+    color: var(--color-light);
+    background: rgba(255,255,255,0.065);
+}
+
+.nav a.active {
+    background: var(--color-background);
+    color: var(--color-light);
+}
+
+.nava::before { 
+    content: '';
+    width: 1px;
+    height: 3rem;
+    background: var(--color-primary);
+}
+/* .nava::after { 
+    content: '';
+    width: 1px;
+    height: 3rem;
+    background: var(--color-primary);
+} */
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) ====================== */
+
+@media screen and (max-width: 1024px) {
+    .nava {
+        left: 50%;
+        bottom: 0rem;
+        height: 8.6vh;
+        transform: translate(-50%,1050%);
+        position: fixed;
+        z-index: 2;
+    }
+
+    .nava::before { 
+        display: none;
+    }
+
+    .nav {
+        border: 1px solid var(--color-primary);
+        background: rgba(0, 0, 0, 0.3);
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0.2rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        transform: translateX(-50%);
+        gap: 0.1rem;
+    }
+
+    .nav a {
+        background: transparent;
+        padding: 1rem;
+        border-radius: 20%;
+        display: flex;
+        color: var(--color-primary);
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nava {
+        display: none;
+    }
+}

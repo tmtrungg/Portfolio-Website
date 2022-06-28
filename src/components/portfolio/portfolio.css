@@ -1,0 +1,120 @@
+.portfolio h2, h4 {
+    text-align: center;
+    font-family: 'Allan', cursive;
+}
+
+.portfolio h4 {
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    text-align: left;
+    margin-left: 1.5rem;
+}
+
+.portfolio h2 {
+    font-size: 6rem;
+    text-align: left;
+    margin: 0 0 1rem 1.5rem;
+    line-height: 80%;
+    color: var(--color-primary)
+}
+
+.portfolio {
+    padding-bottom: 5rem;
+}
+
+.swiper-wrapper {
+    margin-bottom: 3rem;
+}
+
+.portfolio__container {
+    display: grid;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 93%;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.7rem;
+}
+
+.portfolio__item {
+    background: rgba(0, 36, 36, 0.8);
+    padding: 1.3rem;
+    border-radius: 0.8rem;
+}
+
+.portfolio__item:hover {
+    background: transparent;
+    border: 1px solid var(--color-primary-variant);
+}
+
+
+.portfolio__item-icon {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 0.3rem;
+    gap: 1rem;
+}
+
+.portfolio__item-icon-mat {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.icon_file {
+    color: var(--color-primary);
+}
+
+.icon_file2 {
+    color: var(--color-white);
+}
+
+.portfolio__item h3 {
+    margin: 0 0 0.5rem;
+}
+
+.portfolio__item-image {
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.item_desc {
+    margin: 0.5rem;
+}
+
+.portfolio__item-showdetail {
+    width: fit-content;
+    margin: auto;
+}
+
+.portfolio__item-showdetail:hover .detail_down , .detail_more{
+    color: var(--color-white);
+}
+.detail_more {
+    color: var(--color-primary);
+}
+.detail_down {
+    font-size: 10px;
+    margin: 3px;
+}
+
+.swiper-pagination-bullet-active {
+    color: wheat;
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) ====================== */
+
+@media screen and (max-width: 1024px) {
+    .portfolio__container {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio__container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

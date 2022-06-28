@@ -1,0 +1,119 @@
+
+
+.experience h4 {
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    text-align: right;
+    margin-right: 6rem;
+}
+
+.experience h2 {
+    font-size: 6rem;
+    text-align: right;
+    margin: 0 5.53rem 1rem 0;
+    line-height: 80%
+}
+
+.experience {
+    height: 120vh;
+}
+
+.experience__container {
+    width: 100%;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col__title {
+    font-family: 'Caveat', cursive;
+    margin: 0 auto;
+    font-size: 150%;
+}
+
+.skill__column {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+    height: 77vh;
+}
+
+.skillcard {
+    padding: 0.3rem;
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-background);
+}
+
+.skillcard:hover {
+    border: 0.7px solid;
+    border-color: rgba(255,255,255,00.7);
+    
+}
+.skillcard:hover .skill {
+    margin: auto 10px;
+    font-size: 20px;
+    transition: all 250ms ease-in-out;
+}
+.skill {
+    margin: auto 0;
+    font-size: 0px;
+    font-weight: 400;
+    transition: all 250ms ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+    .experience h2, .experience h4{
+        margin: auto;
+        text-align: center;
+    }
+
+    .skill__column {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% / 3);
+        height: 80vh;
+    }
+
+    .skill {
+        margin: auto 0;
+    }
+
+    .col__title {
+        margin: 0 auto;
+        font-size: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .experience h2, .experience h4{
+        margin: auto;
+        text-align: center;
+    }
+
+    .skill__column {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% / 3);
+        height: 80vh;
+    }
+
+    .col__title {
+        display: none;
+    }
+    .skill {
+        margin: auto 0;
+    }
+
+    .skillcard:hover .skill {
+        font-size: 12px;
+        margin: auto 10px;
+        transition: all 250ms ease-in-out;
+        text-align: center;
+    }
+}
