@@ -5,13 +5,14 @@ import {FaGithub} from 'react-icons/fa'
 import {BsFillPlayBtnFill} from 'react-icons/bs'
 import {AiFillCaretDown, AiFillCaretUp} from 'react-icons/ai'
 
+
 const PortfolioItem = ({title,image,href, href2}) => {
   const [desc, setDesc] = useState("0px")
   const description = () => {
     desc === "0px" ? setDesc("10px") : setDesc("0px")
   }
   return (
-    <article className='portfolio__item'>
+    <article className='portfolio__item' style={{height: desc === '0px' ? '25rem' : '28rem'}}>
         <div className="portfolio__item-icon">
             <div className='icon_file'><BsCodeSquare/></div>
             <div className='portfolio__item-icon-mat'>
