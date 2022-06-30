@@ -55,6 +55,7 @@ const Contact = () => {
   }
   return (
     <div id='contact' className='contact'>
+      <div style={{paddingTop: showMes=== "1" ? '0' : '5rem'}}></div>
       <h4>wanna leave a message ?</h4>
       <h2>Contact for work</h2>
       <div className="contact__container">
@@ -63,7 +64,7 @@ const Contact = () => {
               <ContactOption title= {title} desc= {desc} adr = {adr} href= {href} icon= {icon} onClick = {openMessage} showMes = {showMes}/>
           ))}
         </div>
-        {showMes === '1' ? <ContactForm form = {form} onSubmit = {sendEmail} text = {text}/> : <div/>}
+        {showMes === '1' ? <ContactForm form = {form} onSubmit = {sendEmail} text = {text}/> : <div style={{paddingBottom:'5rem'}}/>}
       </div>
     </div>
   )
