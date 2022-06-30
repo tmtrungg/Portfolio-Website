@@ -28,7 +28,7 @@ const Portfolio = () => {
       href3: null
     },
     {
-      title: 'Bot playing game of Nim following optimized strategy',
+      title: 'Game of Nim playing bot with optimized strategy',
       image: <img src={IMG4} alt=''/>,
       desc: 'Create a python virtual board of game of Nim and a python bot that can play the game versus human player. The bots decision is built based on the optimal strategy (of Nim-sum, check out my presentation video below for more detail)',
       href: 'https://github.com/tmtrungg/Bot-playing-Game-of-Nim',

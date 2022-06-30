@@ -13,7 +13,7 @@ const PortfolioItem = ({title,image,href, href2, href3,desc}) => {
     descsize === "0px" ? setDesc("10px") : setDesc("0px")
   }
   return (
-    <article className='portfolio__item' style={{height: descsize === '0px' ? '24rem' : '30rem'}}>
+    <article className='portfolio__item' style={{height: descsize === '0px' ? '25rem' : '32rem'}}>
         <div className="portfolio__item-icon">
             <div className='icon_file'><BsCodeSquare/></div>
             <div className='portfolio__item-icon-mat'>
@@ -27,7 +27,7 @@ const PortfolioItem = ({title,image,href, href2, href3,desc}) => {
             </div>
         </div>
 
-        <h3 className="portfolio__item-image">{title}</h3>
+        <h3 className="portfolio__item-title">{title}</h3>
         <div className="portfolio__item-image">
             {image}
         </div>

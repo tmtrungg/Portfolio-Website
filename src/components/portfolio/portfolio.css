@@ -40,6 +40,7 @@
     height: max-content;
     padding: 1.3rem;
     border-radius: 0.8rem;
+    position: relative;
 }
 
 .portfolio__item-title {
@@ -81,19 +82,27 @@
 
 .portfolio__item-image {
     border-radius: 0.8rem;
+    height: 14rem;
     overflow: hidden;
+}
+
+.portfolio__item-image img {
+    height : auto;
+    max-height: 100%;
 }
 
 .item_desc {
     color: rgb(177, 235, 250);
     font-size: 10px;
-    margin: 0.5rem;
+    margin-top: 1.5rem;
 }
 
 
 .portfolio__item-showdetail {
     width: fit-content;
-    margin: auto;
+    position:absolute;
+    left: 42%;
+    bottom: 12px;
 }
 
 .portfolio__item-showdetail:hover .item_desc {
@@ -119,7 +128,7 @@
 .see_more {
     padding-top: 3rem;
     width: fit-content;
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin: auto;
 }
 
