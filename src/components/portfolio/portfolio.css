@@ -21,7 +21,7 @@
 }
 
 .portfolio {
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 .swiper-wrapper {
@@ -30,8 +30,8 @@
 
 .portfolio__container {
     display: grid;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
     width: 93%;
     grid-template-columns: repeat(3,1fr);
     gap: 0.5rem;
@@ -40,14 +40,14 @@
 .portfolio__item {
     background: rgba(0, 39, 49, 0.8);
     height: max-content;
-    padding: 1.3rem;
-    border-radius: 0.8rem;
+    padding: 1.9rem;
+    border-radius: 1.2rem;
     position: relative;
 }
 
 .portfolio__item-title {
-    font-size: 15px;
-    height: 50px;
+    font-size: 22.5px;
+    height: 75px;
 }
 
 .portfolio__item:hover {
@@ -60,7 +60,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.45rem;
     gap: 1rem;
 }
 
@@ -71,10 +71,12 @@
 
 .icon_file {
     color: var(--color-primary);
+    font-size: x-large;
 }
 
 .icon_file2 , .icon_file3 {
     color: var(--color-white);
+    font-size: x-large;
 }
 
 
@@ -83,8 +85,8 @@
 }
 
 .portfolio__item-image {
-    border-radius: 0.8rem;
-    height: 14rem;
+    border-radius: 1.2rem;
+    height: 21rem;
     overflow: hidden;
 }
 
@@ -95,7 +97,7 @@
 
 .item_desc {
     color: rgb(177, 235, 250);
-    font-size: 10px;
+    font-size: 15x;
     margin-top: 1.5rem;
 }
 
@@ -104,7 +106,7 @@
     width: fit-content;
     position:absolute;
     left: 42%;
-    bottom: 12px;
+    bottom: 18px;
 }
 
 .portfolio__item-showdetail:hover .item_desc {
@@ -117,9 +119,10 @@
 }
 .detail_more {
     color: var(--color-primary);
+    font-size: x-large;
 }
 .detail_down {
-    font-size: 10px;
+    font-size: 15px;
     margin: 3px;
 }
 

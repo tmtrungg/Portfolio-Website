@@ -6,11 +6,21 @@ header {
 header h1 {
     padding: 0;
     font-family: 'Press Start 2P', cursive;
+    color: var(--color-primary);
     font-size: 2.2rem;
 }
 
+.header__intro {
+    font-size: 25px;
+    font-weight: 350;
+}
+
 header h1:hover {
-    color: var(--color-primary);
+    animation: forwards;
+}
+
+header h1:hover {
+    color: var(--color-primary-variant);
 }
 
 .header__container { 

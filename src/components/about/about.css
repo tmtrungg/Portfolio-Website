@@ -36,7 +36,7 @@
 .about__container p {
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
-    font-size: 15px;
+    font-size: 22.5px;
     font-weight: 0;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .about__img {
-    width: 15rem;
+    width: 24em;
     margin: auto;
 }
 

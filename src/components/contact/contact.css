@@ -57,7 +57,7 @@
 }
 
 .contact__option:hover {
-    background: rgba(2, 250, 233, 0.6);
+    background: rgba(0, 4, 4, 0.15);
     border: 1px solid var(--color-primary-variant);
  }
 

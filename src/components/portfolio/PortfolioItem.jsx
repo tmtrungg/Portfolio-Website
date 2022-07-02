@@ -10,10 +10,10 @@ import {HiOutlineNewspaper} from 'react-icons/hi'
 const PortfolioItem = ({title,image,href, href2, href3,desc}) => {
   const [descsize, setDesc] = useState("0px")
   const description = () => {
-    descsize === "0px" ? setDesc("10px") : setDesc("0px")
+    descsize === "0px" ? setDesc("15px") : setDesc("0px")
   }
   return (
-    <article className='portfolio__item' style={{height: descsize === '0px' ? '25rem' : '32rem'}}>
+    <article className='portfolio__item' style={{height: descsize === '0px' ? '37rem' : '48rem'}}>
         <div className="portfolio__item-icon">
             <div className='icon_file'><BsCodeSquare/></div>
             <div className='portfolio__item-icon-mat'>
