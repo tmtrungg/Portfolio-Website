@@ -1,13 +1,49 @@
 header { 
     height: 100vh;
     overflow: hidden;
+    background: var(--color-bg);
 }
 
 header h1 {
     padding: 0;
-    font-family: 'Press Start 2P', cursive;
     color: var(--color-primary);
     font-size: 2.2rem;
+}
+.my_name {
+    font-family: 'Press Start 2P', cursive;
+    width: max-content;
+    font-size: 2.2rem;
+    position: relative;
+}
+.my_name::before,
+.my_name::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.my_name::before {
+    background: var(--color-bg);
+    animation: swipe 3s steps(16) forwards;
+}
+
+.my_name::after{
+    width: 0.125em;
+    background: var(--color-primary);
+    animation: swipe 3s steps(16) forwards, blink 1s steps(15) infinite;
+}
+
+@keyframes swipe {
+    to {left: 100%}
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
 }
 
 .header__intro {
@@ -93,6 +129,22 @@ header h1:hover {
     
 }
 
+.scroll_down {
+    margin: 0;
+    color: var(--color-primary-variant);
+    width: 100%;
+    bottom: 2.3rem;
+    position: absolute;
+    flex-direction: column;
+    font-size: 15px;
+    text-align: center;
+}
+
+.scroll_down-icon {
+    height: 30px;
+    font-size: 30px;
+}
+
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) ====================== */
 
 @media screen and (max-width: 1024px) {
@@ -104,6 +156,9 @@ header h1:hover {
         gap: 10%;
         align-items: center;
         justify-content: center;
+    }
+    .scroll_down {
+       display: none;
     }
 }
 

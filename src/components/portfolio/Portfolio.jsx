@@ -46,7 +46,7 @@ const Portfolio = () => {
   ];
   return (
     <div id='portfolio' className='portfolio'>
-      <h4>My previous</h4>
+      <h4>My previous big</h4>
       <h2>Projects</h2>
 
       <div className="containter portfolio__container">

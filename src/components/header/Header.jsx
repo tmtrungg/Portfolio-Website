@@ -3,6 +3,7 @@ import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/me2.png'
 import HeaderSocial from './HeaderSocial'
+import {IoIosArrowRoundDown} from 'react-icons/io'
 
 const Header = () => {
   return (
@@ -10,7 +11,7 @@ const Header = () => {
       <div className="container header__container">
         <div>
           <div className="header__intro"> Hello I'm</div>
-          <h1>Trung Minh Tran</h1>
+          <h1 className='my_name'>Trung Minh Tran.</h1>
           <div className="header__intro">Software/Web3 developer</div>
           <CTA/>
           <HeaderSocial/>
@@ -20,13 +21,13 @@ const Header = () => {
           <div className="me">
           <img src={ME} alt="me"/>
         </div></div>
-       
-
-        {/* <a href="#contact" className='scroll__down'>Scroll down</a> */}
 
         
       </div>
-
+      <a className='scroll_down' href ='#about'>
+         <div>Scroll down</div>
+          <div href="#about" target="_blank" className='scroll_down-icon'>↓</div>
+      </a>
     </header>
   )
 }
