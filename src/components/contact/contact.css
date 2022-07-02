@@ -2,16 +2,21 @@
     font-family: 'Allan', cursive;
     padding-top: 0;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.9rem;
 }
 
 .contact h2 {
     font-family: 'Allan', cursive;
-    font-size: 6rem;
+    font-size: 9rem;
     text-align: center;
-    margin: 0 0 1rem 0;
+    margin: 0 0 2.5rem 0;
     line-height: 80%;
     color: var(--color-primary);
+}
+
+.contact h5 {
+    font-size: 1.7rem;
+    margin: 0;
 }
 
 .contact {
@@ -37,15 +42,15 @@
 .contact_option-big {
     background: rgba(0, 0, 0, 0.4);
    width: 30%;
-   border-radius: 1.2rem;
+   border-radius: 1.8rem;
    text-align: center;
    transition: var(--transition);
 }
 
 .contact__option {
    background: rgba(2, 250, 233, 0.15);
-   border: 1px solid var(--color-primary-variant);
-   padding: 0.5rem;
+   border: 1.5px solid var(--color-primary-variant);
+   padding: 1rem;
    border-radius: 1.2rem;
    text-align: center;
    transition: var(--transition);
@@ -58,16 +63,16 @@
 
  .contact__desc {
     font-family: 'Caveat', cursive;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
  }
 
 .contact__option-icon{
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
 }
 
 .contact__option-a {
-    margin-right: 10rem;
+    margin-right: 15rem;
 }
 
 /*FORM*/
@@ -75,16 +80,16 @@ form {
     background: rgba(0,0,0,0);
     margin: auto;
     width: 80%;
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.8rem;
 }
 
 input, textarea { 
     width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
+    padding: 2.25rem;
+    border-radius: 0.75rem;
     background: transparent;
     color: var(--color-white);
     border: 2px solid var(--color-primary-variant);

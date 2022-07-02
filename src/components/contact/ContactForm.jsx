@@ -8,7 +8,7 @@ const ContactForm = ({form, onSubmit,text}) => {
         <input className='input_name' type="text" name = 'name' value={text} placeholder='Your name' required />
         <input className='input_mail' value={text} type="email" name = 'mail' placeholder='Your email' required />
       </div>
-      <textarea name = 'message' value={text} rows ='5' placeholder='Type your message here' required/>
+      <textarea name = 'message' value={text} rows ='9' placeholder='Type your message here' required/>
       <button type ='submit' className='btn btn-secondary'>Send</button>
     </form>
   )

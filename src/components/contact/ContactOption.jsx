@@ -7,7 +7,7 @@ const ContactOption = ({title,desc,adr,href,icon, onClick,showMes}) => {
     <article className='contact__option'>
         {icon}
         <h3>{title}</h3>
-        <h5 style={{marginBottom: '0.5rem'}}>{adr}</h5>
+        <h5>{adr}</h5>
         <div className='contact__desc'>
             {title === 'Direct Message' ? (
                 <a

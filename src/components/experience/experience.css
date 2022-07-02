@@ -1,16 +1,16 @@
 
 
 .experience h4 {
-    padding-top: 1rem;
-    font-size: 1.3rem;
+    padding-top: 1.5rem;
+    font-size: 1.9rem;
     text-align: right;
-    margin-right: 6rem;
+    margin-right: 9rem;
 }
 
 .experience h2 {
-    font-size: 6rem;
+    font-size: 9rem;
     text-align: right;
-    margin: 0 5.53rem 1rem 0;
+    margin: 0 7rem 1.5rem 0;
     line-height: 80%
 }
 
@@ -30,7 +30,7 @@
 .col__title {
     font-family: 'Caveat', cursive;
     margin: 0 auto;
-    font-size: 150%;
+    font-size: 170%;
 }
 
 .skill__column {
@@ -49,15 +49,9 @@
     flex-direction: row;
     background-color: var(--color-background);
 }
-
-.skillcard:hover {
-    border: 0.7px solid;
-    border-color: rgba(255,255,255,00.7);
-    
-}
 .skillcard:hover .skill {
-    margin: auto 10px;
-    font-size: 20px;
+    margin: auto 15px;
+    font-size: 28px;
     transition: all 250ms ease-in-out;
 }
 .skill {

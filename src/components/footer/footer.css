@@ -1,14 +1,14 @@
     footer {
-        margin-top: 3rem;
+        margin-top: 4.5rem;
         background: rgb(106, 247, 177,0.85);
-        padding: 0.3rem 0;
+        padding: 0.2rem 0;
         text-align: center;
         transition: var(t--transition);
     }
     
 
     .footer_copyright {
-        font-size: 12px;
+        font-size: 18px;
         font-style: italic;
         color: var(--color-bg);
     }

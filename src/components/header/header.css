@@ -6,7 +6,7 @@ header {
 header h1 {
     padding: 0;
     font-family: 'Press Start 2P', cursive;
-    font-size: 1.4rem;
+    font-size: 2.2rem;
 }
 
 header h1:hover {
@@ -19,13 +19,13 @@ header h1:hover {
     position: relative;
     display: grid;
     grid-template-columns: 40% 40%;
-    gap: 15%;
+    gap: 12%;
     align-items: center;
     justify-content: center;
 }
 
 .cta { 
-    margin-top: 1.5rem;
+    margin-top: 2.25rem;
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -43,7 +43,7 @@ header h1:hover {
 
 .header__socials a {
     color: var(--color-white);
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .header__socials a:hover {
@@ -51,14 +51,14 @@ header h1:hover {
 }
 .header__socials::before { 
     content: '';
-    width: 4rem;
-    height: 1px;
+    width: 6rem;
+    height: 1.5px;
     background: var(--color-white);
 }
 .header__socials::after { 
     content: '';
-    width: 4rem;
-    height: 1px;
+    width: 6rem;
+    height: 1.5px;
     background: var(--color-white);
 }
 .me_img {
@@ -71,7 +71,7 @@ header h1:hover {
 }
 .me {
     background: linear-gradient(rgba(0,0,0,1),60%,transparent);
-    width: 20rem;
+    width: 30rem;
     border-radius: 1rem;
     justify-content: center;
     overflow: hidden;
